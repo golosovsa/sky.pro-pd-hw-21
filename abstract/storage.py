@@ -3,28 +3,37 @@
 """
 
 from abc import ABC, abstractmethod
+from .protected_repository import ProtectedRepository
 
 
-class Storage(ABC):
+class Storage(ProtectedRepository, ABC):
 
-    _type: str = "Abstract"
+    @classmethod
+    @abstractmethod
+    def type(cls) -> str:
+        pass
 
     @property
-    def type(self):
-        return self._type
-
     @abstractmethod
-    def add(self, product, amount):
+    def capacity(self) -> int:
         pass
 
     @abstractmethod
-    def remove(self, product, amount):
+    def add(self, product, amount) -> int:
         pass
 
     @abstractmethod
-    def get_free_space(self):
+    def remove(self, product, amount) -> int:
         pass
 
     @abstractmethod
-    def get_unique_items_count(self):
+    def get_free_space(self) -> int:
+        pass
+
+    @abstractmethod
+    def get_items(self) -> dict[str, int]:
+        pass
+
+    @abstractmethod
+    def get_unique_items_count(self) -> int:
         pass

@@ -1,5 +1,5 @@
 """
-    Abstract class EssenceMixin
+    Abstract class Essence
 """
 
 from abc import ABC, abstractmethod
@@ -7,15 +7,16 @@ from abc import ABC, abstractmethod
 
 class Essence(ABC):
 
+    @property
     @abstractmethod
-    def get_name(self):
+    def name(self) -> str:
+        pass
+
+    @property
+    @abstractmethod
+    def position(self) -> tuple[float, float]:
         pass
 
     @abstractmethod
-    def get_position(self):
-        pass
-
-    @staticmethod
-    @abstractmethod
-    def calc_distance(essence1, essence2):
+    def calc_distance_to(self, essence: "Essence") -> float:
         pass

@@ -4,37 +4,43 @@
 
 from abc import ABC, abstractmethod
 
+from .mobile_essence import MobileEssence
+from .essence import Essence
+
 
 class Task(ABC):
 
+    @property
     @abstractmethod
-    def get_performer(self):
+    def where(self) -> Essence:
         pass
 
+    @property
     @abstractmethod
-    def get_sender(self):
+    def dest(self) -> Essence:
         pass
 
+    @property
     @abstractmethod
-    def get_recipient(self):
+    def product(self) -> str:
         pass
 
+    @property
     @abstractmethod
-    def get_product(self):
+    def amount(self) -> int:
         pass
 
+    @property
     @abstractmethod
-    def get_amount(self):
+    def performer(self) -> MobileEssence:
         pass
 
+    @property
     @abstractmethod
-    def get_status(self):
-        pass
-
-    @abstractmethod
-    def get_progress(self):
+    def status(self) -> str:
         pass
 
     @abstractmethod
     def update(self):
         pass
+
