@@ -4,7 +4,7 @@
 from abc import ABC, abstractmethod
 
 
-class Storage(ABC):
+class AbstractStorage(ABC):
     """ Abstract class """
 
     @property
@@ -38,11 +38,6 @@ class Storage(ABC):
     @abstractmethod
     def get_free_space(self):
         """ Amount of free space for items """
-        pass
-
-    @abstractmethod
-    def get_items(self) -> dict[str, int]:
-        """ Returns a stock of items as a dictionary """
         pass
 
     @abstractmethod

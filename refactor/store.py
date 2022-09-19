@@ -4,7 +4,7 @@
     It stores any number of any goods.
     Store cannot be filled if free space runs out
 """
-from storage import Storage
+from refactor.abstract import Storage
 
 
 class Store(Storage):
