@@ -6,12 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="bbcc0d36-aa2d-4ec9-aae4-af467452e927" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/abstract/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/refaqctor 2/abstract/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/abstract/essence.py" beforeDir="false" afterPath="$PROJECT_DIR$/refaqctor 2/abstract/essence.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/abstract/mobile.py" beforeDir="false" afterPath="$PROJECT_DIR$/refaqctor 2/abstract/mobile.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/abstract/request.py" beforeDir="false" afterPath="$PROJECT_DIR$/refaqctor 2/abstract/request.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/abstract/storage.py" beforeDir="false" afterPath="$PROJECT_DIR$/refaqctor 2/abstract/storage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/abstract/task.py" beforeDir="false" afterPath="$PROJECT_DIR$/refaqctor 2/abstract/task.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/abstract/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/abstract/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/task.py" beforeDir="false" afterPath="$PROJECT_DIR$/implementations/task.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +49,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/implementations" />
       <recent name="C:\sky.pro\backend\sky.pro-pd-hw-21\refaqctor 2" />
       <recent name="C:\sky.pro\backend\sky.pro-pd-hw-21\refactor" />
       <recent name="C:\sky.pro\backend\sky.pro-pd-hw-21\abstracts" />
@@ -159,7 +157,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/base/task.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/implementations/task.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -189,6 +187,7 @@
       <workItem from="1663399602095" duration="12634000" />
       <workItem from="1663442785037" duration="24358000" />
       <workItem from="1663610553812" duration="12608000" />
+      <workItem from="1663677890636" duration="2453000" />
     </task>
     <servers />
   </component>
@@ -220,8 +219,8 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/sky_pro_pd_hw_21$task.coverage" NAME="task Coverage Results" MODIFIED="1663621949514" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base" />
     <SUITE FILE_PATH="coverage/sky_pro_pd_hw_21$storage__1_.coverage" NAME="storage (1) Coverage Results" MODIFIED="1663612900947" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/abstract" />
-    <SUITE FILE_PATH="coverage/sky_pro_pd_hw_21$main.coverage" NAME="main Coverage Results" MODIFIED="1663528295241" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/sky_pro_pd_hw_21$storage.coverage" NAME="storage Coverage Results" MODIFIED="1663612660451" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base" />
+    <SUITE FILE_PATH="coverage/sky_pro_pd_hw_21$main.coverage" NAME="main Coverage Results" MODIFIED="1663412149220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/sky_pro_pd_hw_21$request.coverage" NAME="request Coverage Results" MODIFIED="1663409812375" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/sky_pro_pd_hw_21$storage.coverage" NAME="storage Coverage Results" MODIFIED="1663612660451" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base" />
   </component>
 </project>

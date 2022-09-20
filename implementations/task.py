@@ -1,11 +1,11 @@
 """
-    Base class implementation Task
+    class implementation Task
 """
 import time
 
 import abstract
-from .essence import Essence
-from .mobile_essence import MobileEssence
+from base.essence import Essence
+from base.mobile_essence import MobileEssence
 
 
 class Task(abstract.Task):
