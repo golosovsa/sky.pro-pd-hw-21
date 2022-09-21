@@ -3,14 +3,15 @@
 """
 
 from abc import ABC, abstractmethod
-from .repository import Repository
+from .protected_repository import ProtectedRepository
+from .essence import Essence
 
 
-class Storage(Repository, ABC):
+class Storage(ProtectedRepository, ABC):
 
-    @property
+    @classmethod
     @abstractmethod
-    def _capacity(self) -> int:
+    def type(cls) -> str:
         pass
 
     @property
@@ -37,4 +38,3 @@ class Storage(Repository, ABC):
     @abstractmethod
     def get_unique_items_count(self) -> int:
         pass
-

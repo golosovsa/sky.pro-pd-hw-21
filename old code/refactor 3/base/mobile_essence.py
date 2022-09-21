@@ -1,7 +1,6 @@
 """
     Base class implementation MobileEssence
 """
-import math
 import abstract
 from .essence import Essence
 

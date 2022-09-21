@@ -8,9 +8,10 @@ from .storage import Storage
 
 class ReservationStorage(Storage, abstract.ReservationStorage):
 
-    _type: str = "Base Reservation Storage"
+    _type: str = "static"
 
-    def __init__(self, capacity):
+    def __init__(self, **kwargs):
+        capacity = kwargs["capacity"]
         super(ReservationStorage, self).__init__(capacity)
         self._reservation_storage: Storage = Storage(capacity)
 

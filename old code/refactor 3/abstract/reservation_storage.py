@@ -6,7 +6,7 @@ from abc import ABC, abstractmethod
 from .storage import Storage
 
 
-class ReservationStorage(Storage, ABC):
+class ReservationStorage(ABC):
 
     @abstractmethod
     def reserve(self, product: str, amount: int) -> int:

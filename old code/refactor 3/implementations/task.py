@@ -4,41 +4,34 @@
 import time
 
 import abstract
-from base.essence import Essence
-from base.mobile_essence import MobileEssence
+from implementation import ReservationStorage, Essence
+from implementation import Mobile
 
 
 class Task(abstract.Task):
 
     _statuses: list[str] = ["wait_for_performer", "wait_for_delivery", "finished"]
 
-    def __init__(self, where: Essence, dest: Essence, product: str, amount: int, performer: MobileEssence):
+    def __init__(self,
+                 where: ReservationStorage,
+                 dest: ReservationStorage,
+                 performer: Mobile):
         self._where = where
         self._dest = dest
-        self._product = product
-        self._amount = amount
         self._performer = performer
         self._status_index: int = 0
         self._last_time: float = time.time()
 
     @property
-    def where(self) -> Essence:
+    def where(self) -> ReservationStorage:
         return self._where
 
     @property
-    def dest(self) -> Essence:
+    def dest(self) -> ReservationStorage:
         return self._dest
 
     @property
-    def product(self) -> str:
-        return self._product
-
-    @property
-    def amount(self) -> int:
-        return self.amount
-
-    @property
-    def performer(self) -> MobileEssence:
+    def performer(self) -> Mobile:
         return self._performer
 
     @property
@@ -56,7 +49,7 @@ class Task(abstract.Task):
         self._last_time = current_time
         method(elapsed_time)
 
-    def __wait_for_essence(self, essence: Essence, elapsed_time: float):
+    def __wait_for_essence(self, essence: Essence | ReservationStorage, elapsed_time: float):
         self._performer.update_position_to(essence, elapsed_time)
         if self._performer.is_in_position(essence):
             self._status_index += 1

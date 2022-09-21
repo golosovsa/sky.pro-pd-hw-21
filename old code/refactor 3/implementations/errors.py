@@ -2,9 +2,13 @@
     Errors classes implementation
 """
 
-from base import Error
+from implementation import Error
 
 
 class RequestError(Error):
+    pass
+
+
+class WorldError(Error):
     pass
 

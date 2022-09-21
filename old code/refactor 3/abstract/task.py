@@ -1,25 +1,28 @@
 """
-    Abstract class Storage
+    Abstract class Task
 """
 
 from abc import ABC, abstractmethod
+
+from .mobile_essence import MobileEssence
+from .essence import Essence
 
 
 class Task(ABC):
 
     @property
     @abstractmethod
-    def _where(self):
+    def where(self) -> Essence:
         pass
 
     @property
     @abstractmethod
-    def _dest(self):
+    def dest(self) -> Essence:
         pass
 
     @property
     @abstractmethod
-    def _performer(self):
+    def performer(self) -> MobileEssence:
         pass
 
     @property
@@ -27,17 +30,7 @@ class Task(ABC):
     def status(self) -> str:
         pass
 
-    @classmethod
-    @property
     @abstractmethod
-    def _steps(cls) -> str:
+    def update(self):
         pass
 
-    @property
-    @abstractmethod
-    def _step_index(cls) -> str:
-        pass
-
-    @abstractmethod
-    async def update(self):
-        pass

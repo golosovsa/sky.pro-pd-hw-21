@@ -10,7 +10,7 @@ class MobileEssence(Essence, ABC):
 
     @property
     @abstractmethod
-    def _speed(self) -> float:
+    def speed(self) -> float:
         pass
 
     @abstractmethod
@@ -18,9 +18,9 @@ class MobileEssence(Essence, ABC):
         pass
 
     @abstractmethod
-    def update_position_to(self, dest, time):
+    def update_position_to(self, essence_to: Essence, time):
         pass
 
     @abstractmethod
-    def is_in_position(self, dest) -> bool:
+    def is_in_position(self, essence_dest) -> bool:
         pass

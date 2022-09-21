@@ -7,9 +7,9 @@ import abstract
 
 class Essence(abstract.Essence):
 
-    def __init__(self, name: str, position: tuple[float, float]):
-        self._name = name
-        self._position = position
+    def __init__(self, **kwargs):
+        self._name = kwargs["name"]
+        self._position = kwargs["position"]
 
     @property
     def name(self) -> str:
