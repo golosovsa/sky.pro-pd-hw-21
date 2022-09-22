@@ -1,5 +1,5 @@
 """
-    Base implementation of class Essence
+    Base implement of class Essence
 """
 
 from refactor import abstract

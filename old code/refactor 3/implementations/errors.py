@@ -1,8 +1,8 @@
 """
-    Errors classes implementation
+    Errors classes implement
 """
 
-from implementation import Error
+from implement import Error
 
 
 class RequestError(Error):

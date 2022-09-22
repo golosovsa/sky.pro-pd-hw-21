@@ -1,5 +1,5 @@
 """
-    Base class implementation Error
+    Base class implement Error
 """
 
 import abstract

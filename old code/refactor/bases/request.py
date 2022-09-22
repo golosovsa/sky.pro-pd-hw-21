@@ -1,5 +1,5 @@
 """
-    Base implementation of class Request
+    Base implement of class Request
 """
 
 from refactor import abstract

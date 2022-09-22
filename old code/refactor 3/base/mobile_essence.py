@@ -1,5 +1,5 @@
 """
-    Base class implementation MobileEssence
+    Base class implement MobileEssence
 """
 import abstract
 from .essence import Essence

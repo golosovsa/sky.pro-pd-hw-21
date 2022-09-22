@@ -1,11 +1,11 @@
 """
-    class implementation Task
+    class implement Task
 """
 import time
 
 import abstract
-from implementation import ReservationStorage, Essence
-from implementation import Mobile
+from implement import ReservationStorage, Essence
+from implement import Mobile
 
 
 class Task(abstract.Task):

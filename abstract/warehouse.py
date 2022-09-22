@@ -4,7 +4,7 @@
 
 from abc import ABC, abstractmethod
 from .redundant_storage import RedundantStorage
-from essence import Essence
+from .essence import Essence
 
 
 class Warehouse(RedundantStorage, Essence, ABC):

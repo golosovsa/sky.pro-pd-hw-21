@@ -1,5 +1,5 @@
 """
-    Base implementation of class Storage
+    Base implement of class Storage
 """
 
 from refactor import abstract

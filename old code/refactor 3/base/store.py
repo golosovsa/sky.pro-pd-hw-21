@@ -1,8 +1,8 @@
 """
-    Base class implementation Storage
+    Base class implement Storage
 """
 
-from implementation import ReservationStorage, Essence
+from implement import ReservationStorage, Essence
 
 
 class Store(ReservationStorage, Essence):

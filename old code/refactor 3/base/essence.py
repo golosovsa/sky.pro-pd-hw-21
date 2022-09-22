@@ -1,5 +1,5 @@
 """
-    Base class implementation Essence
+    Base class implement Essence
 """
 import math
 import abstract

@@ -7,10 +7,7 @@ from abc import ABC, abstractmethod
 
 class Repository(ABC):
 
-    @property
-    @abstractmethod
-    def _items(self) -> dict[str, int]:
-        pass
+    _items: dict[str, int] = NotImplemented
 
     @abstractmethod
     def add(self, key: str, count: int):

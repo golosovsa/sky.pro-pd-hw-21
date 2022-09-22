@@ -1,9 +1,9 @@
 """
-    class implementation World
+    class implement World
 """
 
 import abstract
-from implementation import Storage, ReservationStorage as Static
+from implement import Storage, ReservationStorage as Static
 from .request import Request
 from .task import Task
 from .errors import WorldError

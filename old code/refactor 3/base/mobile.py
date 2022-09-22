@@ -1,5 +1,5 @@
 """
-    Base class implementation Mobile
+    Base class implement Mobile
 """
 
 from .storage import Storage

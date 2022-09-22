@@ -1,12 +1,12 @@
 """
-    Base class implementation ProtectedRepository
+    Base class implement ProtectedRepository
 """
 
 import abstract
 
 
 class ProtectedRepository(abstract.ProtectedRepository):
-    """ Base implementation """
+    """ Base implement """
 
     def __init__(self):
         self._data: dict[str, int] = {}

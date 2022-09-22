@@ -1,5 +1,5 @@
 """
-    Base class implementation Storage
+    Base class implement Storage
 """
 
 import abstract

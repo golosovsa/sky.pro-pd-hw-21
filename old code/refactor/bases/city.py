@@ -1,5 +1,5 @@
 """
-    Base implementation of class City
+    Base implement of class City
 """
 
 from refactor import abstract

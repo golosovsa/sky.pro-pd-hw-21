@@ -5,56 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bbcc0d36-aa2d-4ec9-aae4-af467452e927" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/old code/refactor 3/implementations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old code/refactor 3/implementations/request.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old code/refactor 3/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/implement/base/repository.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/abstract/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refactor 3/abstract/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/abstract/error.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refactor 3/abstract/error.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/abstract/essence.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refactor 3/abstract/essence.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/abstract/mobile_essence.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refactor 3/abstract/mobile_essence.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/abstract/protected_repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refactor 3/abstract/protected_repository.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/abstract/request.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refactor 3/abstract/request.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/abstract/reservation_storage.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refactor 3/abstract/reservation_storage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/abstract/storage.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refactor 3/abstract/storage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/abstract/task.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refactor 3/abstract/task.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refactor 3/base/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/error.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refactor 3/base/error.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/essence.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refactor 3/base/essence.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/mobile_essence.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refactor 3/base/mobile_essence.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/protected_repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refactor 3/base/protected_repository.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/reservation_storage.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refactor 3/base/reservation_storage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/storage.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refactor 3/base/storage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/implementations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/implementations/errors.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refactor 3/implementations/errors.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/implementations/request.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/implementations/task.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refactor 3/implementations/task.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/refactor/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refactor/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/refactor/abstract/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refactor/abstract/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/refactor/abstract/city.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refactor/abstract/city.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/refactor/abstract/courier.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refactor/abstract/courier.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/refactor/abstract/error.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refactor/abstract/error.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/refactor/abstract/essence.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refactor/abstract/essence.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/refactor/abstract/request.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refactor/abstract/request.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/refactor/abstract/storage.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refactor/abstract/storage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/refactor/bases/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refactor/bases/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/refactor/bases/city.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refactor/bases/city.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/refactor/bases/courier.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refactor/bases/courier.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/refactor/bases/essence.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refactor/bases/essence.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/refactor/bases/request.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refactor/bases/request.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/refactor/bases/storage.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refactor/bases/storage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/refactor/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refactor/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/refactor/request.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refactor/request.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/refactor/shop.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refactor/shop.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/refactor/store.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refactor/store.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/refaqctor 2/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refaqctor 2/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/refaqctor 2/abstract/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refaqctor 2/abstract/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/refaqctor 2/abstract/essence.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refaqctor 2/abstract/essence.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/refaqctor 2/abstract/mobile.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refaqctor 2/abstract/mobile.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/refaqctor 2/abstract/request.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refaqctor 2/abstract/request.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/refaqctor 2/abstract/storage.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refaqctor 2/abstract/storage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/refaqctor 2/abstract/task.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refaqctor 2/abstract/task.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/abstract/repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/abstract/repository.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/abstract/shop.py" beforeDir="false" afterPath="$PROJECT_DIR$/abstract/shop.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/abstract/warehouse.py" beforeDir="false" afterPath="$PROJECT_DIR$/abstract/warehouse.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/implementation/base/repository.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old code/refactor 3/base/error.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refactor 3/base/error.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/old code/refactor 3/base/essence.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refactor 3/base/essence.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/old code/refactor 3/base/mobile.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refactor 3/base/mobile.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/old code/refactor 3/base/mobile_essence.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refactor 3/base/mobile_essence.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/old code/refactor 3/base/protected_repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refactor 3/base/protected_repository.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/old code/refactor 3/base/reservation_storage.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refactor 3/base/reservation_storage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/old code/refactor 3/base/storage.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refactor 3/base/storage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/old code/refactor 3/base/store.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refactor 3/base/store.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/old code/refactor 3/implementations/errors.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refactor 3/implementations/errors.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/old code/refactor 3/implementations/request.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refactor 3/implementations/request.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/old code/refactor 3/implementations/task.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refactor 3/implementations/task.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/old code/refactor 3/implementations/world.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refactor 3/implementations/world.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/old code/refactor/bases/city.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refactor/bases/city.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/old code/refactor/bases/courier.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refactor/bases/courier.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/old code/refactor/bases/essence.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refactor/bases/essence.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/old code/refactor/bases/request.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refactor/bases/request.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/old code/refactor/bases/storage.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refactor/bases/storage.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,20 +52,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/grm/sky.pro/backend/sky.pro-pd-hw-21/abstract",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/grm/sky.pro/backend/sky.pro-pd-hw-21/abstract&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/abstract" />
@@ -105,7 +78,7 @@
       <recent name="$PROJECT_DIR$/implementations" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main (1)">
+  <component name="RunManager" selected="Python tests.Python tests in test_repository.py">
     <configuration name="error" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="sky.pro-pd-hw-21" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -120,28 +93,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/base/error.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="sky.pro-pd-hw-21" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/refactor 3/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -216,9 +167,24 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests in test_repository.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="sky.pro-pd-hw-21" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/base" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/base/test_repository.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main (1)" />
+        <item itemvalue="Python tests.Python tests in test_repository.py" />
         <item itemvalue="Python.store" />
         <item itemvalue="Python.error" />
         <item itemvalue="Python.task" />
@@ -237,7 +203,8 @@
       <workItem from="1663399602095" duration="12634000" />
       <workItem from="1663442785037" duration="24358000" />
       <workItem from="1663610553812" duration="12608000" />
-      <workItem from="1663677890636" duration="26203000" />
+      <workItem from="1663677890636" duration="26537000" />
+      <workItem from="1663847997915" duration="5833000" />
     </task>
     <servers />
   </component>
@@ -256,6 +223,7 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/sky_pro_pd_hw_21$.coverage" NAME=" Coverage Results" MODIFIED="1663851005321" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/base" />
     <SUITE FILE_PATH="coverage/sky_pro_pd_hw_21$task.coverage" NAME="task Coverage Results" MODIFIED="1663621949514" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base" />
     <SUITE FILE_PATH="coverage/sky_pro_pd_hw_21$storage__1_.coverage" NAME="storage (1) Coverage Results" MODIFIED="1663612900947" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/abstract" />
     <SUITE FILE_PATH="coverage/sky_pro_pd_hw_21$store.coverage" NAME="store Coverage Results" MODIFIED="1663750779801" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base" />

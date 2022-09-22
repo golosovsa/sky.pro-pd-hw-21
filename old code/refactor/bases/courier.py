@@ -1,5 +1,5 @@
 """
-    Base implementation of class Courier
+    Base implement of class Courier
 """
 
 from refactor import abstract

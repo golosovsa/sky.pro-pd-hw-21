@@ -1,5 +1,5 @@
 """
-    Base class implementation ReservationStorage
+    Base class implement ReservationStorage
 """
 
 import abstract

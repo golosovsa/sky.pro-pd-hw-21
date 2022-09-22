@@ -1,10 +1,10 @@
 """
-    class implementation Request
+    class implement Request
 """
 import re
 
 import abstract
-from implementation import ReservationStorage
+from implement import ReservationStorage
 from .errors import RequestError
 from .task import Task
 
