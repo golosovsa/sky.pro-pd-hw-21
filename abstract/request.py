@@ -22,9 +22,13 @@ class Request(ABC):
         pass
 
     @abstractmethod
-    def task_completed(self, task):
+    def _create_task(self, world):
         pass
 
     @abstractmethod
-    async def update(self):
+    def _task_completed(self, world, task):
+        pass
+
+    @abstractmethod
+    def update(self, world):
         pass

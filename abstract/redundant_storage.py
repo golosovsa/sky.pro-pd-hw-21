@@ -9,10 +9,7 @@ from .storage import Storage
 
 class RedundantStorage(Storage, ABC):
 
-    @property
-    @abstractmethod
-    def _redundant(self) -> Storage:
-        pass
+    _redundant: Storage = NotImplemented
 
     @abstractmethod
     def reserve(self, product: str, amount: int) -> int:

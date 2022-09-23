@@ -7,26 +7,15 @@ from abc import ABC, abstractmethod
 
 class Essence(ABC):
 
+    _type: str = NotImplemented
+    _name: str = NotImplemented
+    _position: tuple[float, float] = NotImplemented
+
     @classmethod
     @property
     @abstractmethod
-    def _type(cls) -> str:
-        pass
-
-    @property
-    @abstractmethod
-    def _name(self) -> str:
-        pass
-
-    @property
-    @abstractmethod
-    def _position(self) -> tuple[float, float]:
-        pass
-
-    @property
-    @abstractmethod
-    def type(self) -> str:
-        return self._type
+    def type(cls) -> str:
+        return cls._type
 
     @property
     @abstractmethod
@@ -46,9 +35,3 @@ class Essence(ABC):
     @abstractmethod
     def calc_distance_to(self, dest) -> float:
         pass
-
-    @staticmethod
-    @abstractmethod
-    def create(**kwargs):
-        pass
-

@@ -8,10 +8,7 @@ from .repository import Repository
 
 class Storage(Repository, ABC):
 
-    @property
-    @abstractmethod
-    def _capacity(self) -> int:
-        pass
+    _capacity: int = NotImplemented
 
     @property
     @abstractmethod

@@ -8,10 +8,7 @@ from .essence import Essence
 
 class MobileEssence(Essence, ABC):
 
-    @property
-    @abstractmethod
-    def _speed(self) -> float:
-        pass
+    _speed: float = NotImplemented
 
     @abstractmethod
     def calc_time(self, distance: float) -> float:

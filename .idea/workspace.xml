@@ -5,29 +5,71 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bbcc0d36-aa2d-4ec9-aae4-af467452e927" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/implement/base/repository.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/abstract/repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/abstract/repository.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/abstract/shop.py" beforeDir="false" afterPath="$PROJECT_DIR$/abstract/shop.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/abstract/warehouse.py" beforeDir="false" afterPath="$PROJECT_DIR$/abstract/warehouse.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/implementation/base/repository.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old code/refactor 3/base/error.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refactor 3/base/error.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/old code/refactor 3/base/essence.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refactor 3/base/essence.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/old code/refactor 3/base/mobile.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refactor 3/base/mobile.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/old code/refactor 3/base/mobile_essence.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refactor 3/base/mobile_essence.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/old code/refactor 3/base/protected_repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refactor 3/base/protected_repository.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/old code/refactor 3/base/reservation_storage.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refactor 3/base/reservation_storage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/old code/refactor 3/base/storage.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refactor 3/base/storage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/old code/refactor 3/base/store.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refactor 3/base/store.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/old code/refactor 3/implementations/errors.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refactor 3/implementations/errors.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/old code/refactor 3/implementations/request.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refactor 3/implementations/request.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/old code/refactor 3/implementations/task.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refactor 3/implementations/task.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/old code/refactor 3/implementations/world.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refactor 3/implementations/world.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/old code/refactor/bases/city.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refactor/bases/city.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/old code/refactor/bases/courier.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refactor/bases/courier.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/old code/refactor/bases/essence.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refactor/bases/essence.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/old code/refactor/bases/request.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refactor/bases/request.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/old code/refactor/bases/storage.py" beforeDir="false" afterPath="$PROJECT_DIR$/old code/refactor/bases/storage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/abstract/essence.py" beforeDir="false" afterPath="$PROJECT_DIR$/abstract/essence.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/abstract/mobile_essence.py" beforeDir="false" afterPath="$PROJECT_DIR$/abstract/mobile_essence.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/abstract/redundant_storage.py" beforeDir="false" afterPath="$PROJECT_DIR$/abstract/redundant_storage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/abstract/request.py" beforeDir="false" afterPath="$PROJECT_DIR$/abstract/request.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/abstract/storage.py" beforeDir="false" afterPath="$PROJECT_DIR$/abstract/storage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/abstract/task.py" beforeDir="false" afterPath="$PROJECT_DIR$/abstract/task.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/abstract/uniq_redundant_storage.py" beforeDir="false" afterPath="$PROJECT_DIR$/abstract/uniq_redundant_storage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/abstract/world.py" beforeDir="false" afterPath="$PROJECT_DIR$/abstract/world.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/implement/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/implement/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/implement/base/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/implement/base/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/implement/base/repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/implement/base/repository.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/old code/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old code/refactor 3/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old code/refactor 3/abstract/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old code/refactor 3/abstract/error.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old code/refactor 3/abstract/essence.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old code/refactor 3/abstract/mobile_essence.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old code/refactor 3/abstract/protected_repository.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old code/refactor 3/abstract/request.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old code/refactor 3/abstract/reservation_storage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old code/refactor 3/abstract/storage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old code/refactor 3/abstract/task.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old code/refactor 3/abstract/world.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old code/refactor 3/base/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old code/refactor 3/base/error.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old code/refactor 3/base/essence.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old code/refactor 3/base/mobile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old code/refactor 3/base/mobile_essence.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old code/refactor 3/base/protected_repository.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old code/refactor 3/base/reservation_storage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old code/refactor 3/base/storage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old code/refactor 3/base/store.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old code/refactor 3/implementations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old code/refactor 3/implementations/errors.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old code/refactor 3/implementations/request.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old code/refactor 3/implementations/task.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old code/refactor 3/implementations/world.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old code/refactor 3/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old code/refactor/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old code/refactor/abstract/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old code/refactor/abstract/city.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old code/refactor/abstract/courier.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old code/refactor/abstract/error.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old code/refactor/abstract/essence.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old code/refactor/abstract/request.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old code/refactor/abstract/storage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old code/refactor/bases/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old code/refactor/bases/city.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old code/refactor/bases/courier.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old code/refactor/bases/essence.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old code/refactor/bases/request.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old code/refactor/bases/storage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old code/refactor/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old code/refactor/request.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old code/refactor/shop.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old code/refactor/store.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old code/refaqctor 2/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old code/refaqctor 2/abstract/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old code/refaqctor 2/abstract/essence.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old code/refaqctor 2/abstract/mobile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old code/refaqctor 2/abstract/request.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old code/refaqctor 2/abstract/storage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old code/refaqctor 2/abstract/task.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/base/test_repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/base/test_repository.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,6 +247,7 @@
       <workItem from="1663610553812" duration="12608000" />
       <workItem from="1663677890636" duration="26537000" />
       <workItem from="1663847997915" duration="5833000" />
+      <workItem from="1663909739040" duration="25911000" />
     </task>
     <servers />
   </component>

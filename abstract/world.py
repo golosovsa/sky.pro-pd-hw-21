@@ -38,16 +38,15 @@ class World(ABC):
         pass
 
     @abstractmethod
-    def get_nearest_free_courier(self, where):
-        pass
-
-    @property
-    @abstractmethod
-    def __tasks(self) -> list:
+    def get_the_nearest_free_courier(self, where):
         pass
 
     @abstractmethod
-    def add_task(self, task):
+    def mark_as_busy(self, courier):
+        pass
+
+    @abstractmethod
+    def mark_as_free(self, courier):
         pass
 
     @property
@@ -65,5 +64,5 @@ class World(ABC):
         pass
 
     @abstractmethod
-    async def run(self):
+    def run(self):
         pass

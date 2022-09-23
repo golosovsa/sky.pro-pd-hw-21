@@ -3,41 +3,31 @@
 """
 
 from abc import ABC, abstractmethod
+from .warehouse import Warehouse
+from .shop import Shop
+from .courier import Courier
 
 
 class Task(ABC):
 
-    @property
-    @abstractmethod
-    def _where(self):
-        pass
+    _steps: list[str] = NotImplemented
 
-    @property
-    @abstractmethod
-    def _dest(self):
-        pass
-
-    @property
-    @abstractmethod
-    def _performer(self):
-        pass
+    _where: Warehouse | Shop = NotImplemented
+    _dest: Warehouse | Shop = NotImplemented
+    _performer: Courier = NotImplemented
+    _step_index: int = NotImplemented
+    _time: float = NotImplemented
 
     @property
     @abstractmethod
     def status(self) -> str:
         pass
 
-    @classmethod
     @property
     @abstractmethod
-    def _steps(cls) -> str:
-        pass
-
-    @property
-    @abstractmethod
-    def _step_index(cls) -> str:
+    def performer(self) -> Courier:
         pass
 
     @abstractmethod
-    async def update(self):
+    def update(self):
         pass
