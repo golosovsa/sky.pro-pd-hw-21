@@ -31,8 +31,6 @@ class TestEssence:
     def test_type(self):
         essence = Essence(name="name", position=(5, 0.5))
         assert essence.type == "Essence"
-        with pytest.raises(AttributeError):
-            essence.type = "new type"
 
     def test_name(self):
         essence = Essence(name="name", position=(5, 0.5))

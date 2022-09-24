@@ -15,17 +15,17 @@ class Essence(ABC):
     @property
     @abstractmethod
     def type(cls) -> str:
-        return cls._type
+        pass
 
     @property
     @abstractmethod
     def name(self) -> str:
-        return self._name
+        pass
 
     @property
     @abstractmethod
     def position(self) -> tuple[float, float]:
-        return self._position
+        pass
 
     @staticmethod
     @abstractmethod

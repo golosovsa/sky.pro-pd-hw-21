@@ -7,62 +7,56 @@ from abc import ABC, abstractmethod
 
 class World(ABC):
 
-    @property
-    @abstractmethod
-    def __essence_types(self) -> dict[str, type]:
-        pass
+    __essence_types: dict[str, type] = NotImplemented
+    _static_essences: dict[str, object] = NotImplemented
+    _dynamic_essences: dict[str, object] = NotImplemented
+    _busy_essences: list[str] = NotImplemented
+    _requests: list[object] = NotImplemented
 
     @abstractmethod
-    def register_essence_type(self, essence_type):
-        pass
-
-    @property
-    @abstractmethod
-    def _essences(self) -> dict[str, dict[str, object]]:
-        pass
-
-    @abstractmethod
-    def add_essence(self, essence):
-        pass
-
-    @abstractmethod
-    def _get_essence(self, type_of, name):
-        pass
-
-    @abstractmethod
-    def get_storage(self, name):
-        pass
-
-    @abstractmethod
-    def get_courier(self, name):
-        pass
-
-    @abstractmethod
-    def get_the_nearest_free_courier(self, where):
-        pass
-
-    @abstractmethod
-    def mark_as_busy(self, courier):
-        pass
-
-    @abstractmethod
-    def mark_as_free(self, courier):
-        pass
-
-    @property
-    @abstractmethod
-    def __requests(self) -> list:
-        pass
-
-    @abstractmethod
-    def add_request(self, query):
+    def _add_essence(self, essence):
         pass
 
     @staticmethod
     @abstractmethod
-    def create_from_json(data):
+    def _fill_essence(essence, items):
         pass
 
     @abstractmethod
-    def run(self):
+    def _append_essence(self, **kwargs):
+        pass
+
+    @abstractmethod
+    def _append_request(self, query):
+        pass
+
+    @abstractmethod
+    def get_static_essence_by_name(self, name):
+        pass
+
+    @staticmethod
+    @abstractmethod
+    def _print_error(error, obj):
+        pass
+
+    @staticmethod
+    @abstractmethod
+    def create_from_dict(data):
+        pass
+
+    @staticmethod
+    @abstractmethod
+    def create_from_json_file(filename):
+        pass
+
+    @abstractmethod
+    def get_the_nearest_free_courier(self, essence):
+        pass
+
+    @abstractmethod
+    def mark_as_busy(self, essence):
+        pass
+
+    @abstractmethod
+    def mark_as_free(self, essence):
         pass

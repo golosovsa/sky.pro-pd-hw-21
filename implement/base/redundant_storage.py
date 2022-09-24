@@ -9,7 +9,7 @@ from .storage import Storage
 class RedundantStorage(Storage, abstract.RedundantStorage):
 
     def __init__(self, **kwargs):
-        super(RedundantStorage, self).__init__(**kwargs)
+        super().__init__(**kwargs)
         self._redundant = Storage(capacity=self._capacity)
 
     def reserve(self, product: str, amount: int) -> int:

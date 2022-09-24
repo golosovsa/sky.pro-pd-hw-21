@@ -10,5 +10,8 @@ class Warehouse(RedundantStorage, Essence, abstract.Warehouse):
     _type = "Warehouse"
 
     def __init__(self, name, position, capacity=100):
-        super(Warehouse, self).__init__(name=name, position=position, capacity=capacity)
+        RedundantStorage.__init__(self, capacity=capacity)
+        Essence.__init__(self, name=name, position=position)
 
+    def __del__(self):
+        Essence.__del__(self)

@@ -13,7 +13,7 @@ class Storage(Repository, abstract.Storage):
         assert type(kwargs["capacity"]) == int, "Required parameter capacity must be an int"
         assert kwargs["capacity"] > 0, "Required parameter capacity must be greater than 0"
         self._capacity = kwargs["capacity"]
-        super(Storage, self).__init__(**kwargs)
+        super().__init__(**kwargs)
 
     @property
     def capacity(self) -> int:

@@ -2,8 +2,12 @@
     Implementation of Request
 """
 
+import re
 import abstract
-from . import Task, Warehouse, Shop, Courier
+from .task import Task
+from .warehouse import Warehouse
+from .shop import Shop
+from .courier import Courier
 
 
 class Request(abstract.Request):
@@ -17,8 +21,19 @@ class Request(abstract.Request):
         self._tasks: list[Task] = []
 
     @staticmethod
-    def create(world, query):
-        pass
+    def create(world: abstract.World, query):
+        re_pattern = r"(?P<amount>\d+) (?P<product>\w+) (из|from) (?P<where>\w+) (в|to) (?P<dest>\w+)"
+        match = re.search(re_pattern, query)
+        assert match, "Query parsing error"
+        result = match.groupdict()
+        amount = int(result["amount"])
+        product = result["product"]
+        where = world.get_static_essence_by_name(result["where"])
+        dest = world.get_static_essence_by_name(result["dest"])
+        assert where, "Essence where not found"
+        assert dest, "Essence dest not found"
+        request = Request(where, dest, product, amount)
+        return request
 
     @property
     def progress(self) -> float:
@@ -26,10 +41,13 @@ class Request(abstract.Request):
 
     @property
     def is_done(self) -> bool:
-        return self._delivered >= self._amount
+        return self._delivered >= self._amount and len(self._tasks) == 0
 
-    def _create_task(self, world):
-        performer: Courier = world.get_the_nearest_free_courier()
+    def _create_task(self, world: abstract.World):
+        if self._delivered >= self._amount:
+            return
+
+        performer: Courier = world.get_the_nearest_free_courier(self._where)
         if performer is None:
             return
 
@@ -60,14 +78,12 @@ class Request(abstract.Request):
         world.mark_as_free(task.performer)
 
     def update(self, world):
-        if self.is_done:
-            return
         self._create_task(world)
         tasks: list[Task] = []
         for task in self._tasks:
             task.update()
             if task.status == "completed":
-                self._task_completed(task)
+                self._task_completed(world, task)
                 continue
             tasks.append(task)
         self._tasks = tasks

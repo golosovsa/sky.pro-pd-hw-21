@@ -4,3 +4,4 @@ from .redundant_storage import RedundantStorage
 from .uniq_redundant_storage import UniqRedundantStorage
 from .essence import Essence
 from .mobile_essence import MobileEssence
+from .error import Error

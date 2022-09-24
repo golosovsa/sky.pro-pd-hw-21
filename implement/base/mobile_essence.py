@@ -39,3 +39,6 @@ class MobileEssence(Essence, abstract.MobileEssence):
 
     def is_in_position(self, dest: Essence) -> bool:
         return self.calc_distance_to(dest) <= self.__in_position_radius
+    
+    def __del__(self):
+        super(MobileEssence, self).__del__()
