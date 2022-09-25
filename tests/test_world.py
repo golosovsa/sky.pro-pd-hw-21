@@ -78,7 +78,7 @@ class TestWorld:
         world._add_essence(shop)
         world._add_essence(courier)
 
-        world._append_request("text 3 product1 from warehouse to shop")
+        world.append_request("text 3 product1 from warehouse to shop")
 
         assert len(world._requests) == 1
         assert type(world._requests[0]) == Request
@@ -86,9 +86,9 @@ class TestWorld:
     def test_append_request_failed(self):
         world = World()
         with pytest.raises(CreateRequestError):
-            world._append_request("text 3 product1 from warehouse to shop")
-            world._append_request("bla-bla-bla")
-            world._append_request(100500)
+            world.append_request("text 3 product1 from warehouse to shop")
+            world.append_request("bla-bla-bla")
+            world.append_request(100500)
 
     def test_get_static_essence_by_name(self):
         world = World()

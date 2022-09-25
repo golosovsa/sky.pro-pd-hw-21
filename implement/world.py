@@ -1,7 +1,7 @@
 """
     Implementation of Warehouse
 """
-
+from time import sleep
 import json
 import pathlib
 import abstract
@@ -36,16 +36,13 @@ class World(abstract.World):
                 self._dynamic_essences[essence.name] = essence
 
     @staticmethod
-    def _fill_essence(essence, items):
-        for item in items:
-            assert type(item) == dict, "Wrong type of item in contains items"
-            assert "product" in item, "Missing required parameter product in contains items"
-            assert "amount" in item, "Missing required parameter amount in contains items"
-            assert type(item["product"]) == str, "Wrong type of required parameter product in contains items"
-            assert type(item["amount"]) == int, "Wrong type of required parameter amount in contains items"
-            assert item["product"] != "", "Wrong value of required parameter product in contains items"
-            assert item["amount"] > 0, "Wrong value of required parameter amount in contains items"
-            essence.add(item["product"], item["amount"])
+    def _fill_essence(essence, items: dict):
+        for product, amount in items.items():
+            assert type(product) == str, "Wrong type of required parameter product in contains items"
+            assert type(amount) == int, "Wrong type of required parameter amount in contains items"
+            assert product != "", "Wrong value of required parameter product in contains items"
+            assert amount > 0, "Wrong value of required parameter amount in contains items"
+            essence.add(product, amount)
 
     def _append_essence(self, **kwargs):
         try:
@@ -58,7 +55,7 @@ class World(abstract.World):
 
             essence = self.__essences_types[essence_type](**kwargs["settings"])
             if "contains" in kwargs:
-                assert type(kwargs["contains"]) == list, "Wrong type of parameter contains"
+                assert type(kwargs["contains"]) == dict, "Wrong type of parameter contains"
                 self._fill_essence(essence, kwargs["contains"])
 
             self._add_essence(essence)
@@ -66,7 +63,7 @@ class World(abstract.World):
         except (AssertionError, TypeError) as error:
             raise CreateEssenceError(str(error))
 
-    def _append_request(self, query: str):
+    def append_request(self, query: str):
         try:
             assert type(query) == str, "Wrong type of parameter queries"
             request = Request.create(self, query)
@@ -76,10 +73,10 @@ class World(abstract.World):
 
     @staticmethod
     def _print_error(error, obj):
-        print("=" * 20, "ERROR", "=" * 20)
-        print(str(error), end="\n\n")
-        print(str(obj))
-        print("=" * 47, end="\n\n")
+        World.log("=" * 20, "ERROR", "=" * 20)
+        World.log(str(error), end="\n\n")
+        World.log(str(obj))
+        World.log("=" * 47, end="\n\n")
 
     @staticmethod
     def create_from_dict(data) -> "World" or None:
@@ -100,7 +97,7 @@ class World(abstract.World):
 
             for query in data["requests"]:
                 try:
-                    world._append_request(query)
+                    world.append_request(query)
                 except CreateRequestError as error:
                     World._print_error(error, query)
 
@@ -109,15 +106,15 @@ class World(abstract.World):
             requests_in_data = len(data["requests"])
             requests_has_appended = len(world._requests)
 
-            print("=" * 12, "The world was created", "=" * 12)
-            print(f"Appended successfully {essences_has_appended} from {essences_in_data} essences")
-            print(f"Appended successfully {requests_has_appended} from {requests_in_data} requests")
-            print("=" * 47)
+            World.log("=" * 12, "The world was created", "=" * 12)
+            World.log(f"Appended successfully {essences_has_appended} from {essences_in_data} essences")
+            World.log(f"Appended successfully {requests_has_appended} from {requests_in_data} requests")
+            World.log("=" * 47)
             return world
 
         except AssertionError as error:
             World._print_error(error, data)
-            print("=" * 11, "The world wasn't created", "=" * 10)
+            World.log("=" * 11, "The world wasn't created", "=" * 10)
             return None
 
     @staticmethod
@@ -145,8 +142,33 @@ class World(abstract.World):
 
     def mark_as_busy(self, essence: Courier):
         if essence.name not in self._busy_essences:
+            self.log(f"Courier {essence.name} is busy")
             self._busy_essences.append(essence.name)
 
     def mark_as_free(self, essence: Courier):
         if essence.name in self._busy_essences:
+            self.log(f"Courier {essence.name} is free")
             self._busy_essences.remove(essence.name)
+
+    @staticmethod
+    def log(*args, **kwargs):
+        print(*args, **kwargs)
+        # sep = kwargs.get("sep", " ")
+        # end = kwargs.get("sep", "\n")
+        # with open("output.txt", "at", encoding="utf-8") as fou:
+        #     fou.write(sep.join(args) + end)
+
+    def compute_all_requests(self):
+        requests = filter(
+            lambda req: not req.is_done,
+            self._requests
+        )
+        while requests:
+            requests_in_process = []
+            for request in requests:
+                if not request.is_done:
+                    requests_in_process.append(request)
+                    request.update(self)
+                    continue
+                self.log(f"Request '{str(request)}' completed.")
+            requests = requests_in_process

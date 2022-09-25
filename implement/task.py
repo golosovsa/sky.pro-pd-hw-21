@@ -7,6 +7,7 @@ from time import time
 import abstract
 from . import Warehouse, Shop, Courier
 
+
 class Task(abstract.Task):
 
     _steps = ["wait_for_performer", "wait_for_delivery", "completed"]
@@ -46,3 +47,21 @@ class Task(abstract.Task):
         elapsed_time = current_time - self._time
         self._time = current_time
         method(elapsed_time)
+
+    def __str__(self):
+        match self.status:
+            case "wait_for_performer":
+                distance = self._performer.calc_distance_to(self._where) + \
+                           self._where.calc_distance_to(self._dest)
+                estimated_time = self._performer.calc_time(distance)
+                return f"Task for the {self._performer.name} " \
+                       f"is in progress 'Wait for performer' " \
+                       f"and will be completed in {estimated_time:.2f} seconds'"
+            case "wait_for_delivery":
+                distance = self._performer.calc_distance_to(self._dest)
+                estimated_time = self._performer.calc_time(distance)
+                return f"Task for the {self._performer.name} " \
+                       f"is in progress 'Wait for delivery' " \
+                       f"and will be completed in {estimated_time:.2f} seconds'"
+            case "completed":
+                return f"Task for the {self._performer.name} completed"

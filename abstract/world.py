@@ -27,7 +27,7 @@ class World(ABC):
         pass
 
     @abstractmethod
-    def _append_request(self, query):
+    def append_request(self, query):
         pass
 
     @abstractmethod
@@ -59,4 +59,13 @@ class World(ABC):
 
     @abstractmethod
     def mark_as_free(self, essence):
+        pass
+
+    @abstractmethod
+    def compute_all_requests(self):
+        pass
+
+    @staticmethod
+    @abstractmethod
+    def log(*args, **kwargs):
         pass

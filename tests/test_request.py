@@ -118,5 +118,29 @@ class TestRequest:
         assert courier.get_all() == {"product1": 5}
 
     def test_task_completed(self):
-
+        world = World()
+        warehouse = Warehouse("warehouse", (0, 1))
+        shop = Shop("shop", (0, 2))
+        courier = Courier("courier", (0, 0), 10, 10)
+        items = [
+            {
+                "product": "product1",
+                "amount": 5
+            },
+            {
+                "product": "product2",
+                "amount": 3
+            }
+        ]
+        World._fill_essence(warehouse, items)
+        world._add_essence(warehouse)
+        world._add_essence(shop)
+        world._add_essence(courier)
+        request = Request.create(world, "text 5 product1 from warehouse to shop")
+        assert not request.is_done
+        request.update(world)
+        assert request._tasks
+        task = request._tasks[0]
+        request._task_completed(world, task)
+        assert task.performer.name not in world._busy_essences
 

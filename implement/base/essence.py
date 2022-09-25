@@ -16,7 +16,7 @@ class Essence(abstract.Essence):
         assert kwargs["name"] != "", "Required parameter name cannot be empty"
         assert kwargs["name"] not in Essence.__names, "Required parameter name cannot be repeated"
         assert "position" in kwargs, "Missing required parameter position"
-        assert type(kwargs["position"]) == tuple, "Required parameter position must be a tuple"
+        assert type(kwargs["position"]) in {tuple, list}, "Required parameter position must be a tuple or a list"
         assert len(kwargs["position"]) == 2, "Required parameter position must must consist of 2 elements"
         assert type(kwargs["position"][0]) in {float, int}, "First element of required parameter position " \
                                                             "must be a float or an int"
@@ -24,7 +24,7 @@ class Essence(abstract.Essence):
                                                             "must be a float or an int"
         self.__names.append(kwargs["name"])
         self._name = kwargs["name"]
-        self._position = kwargs["position"]
+        self._position = tuple(kwargs["position"])
 
     def __del__(self):
         if self._name in self.__names:
