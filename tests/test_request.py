@@ -10,16 +10,10 @@ class TestRequest:
         warehouse = Warehouse("warehouse", (0, 1))
         shop = Shop("shop", (0, 2))
         courier = Courier("courier", (0, 0))
-        items = [
-            {
-                "product": "product1",
-                "amount": 5
-            },
-            {
-                "product": "product2",
-                "amount": 3
-            }
-        ]
+        items = {
+            "product1": 5,
+            "product2":  3
+        }
         World._fill_essence(warehouse, items)
         world._add_essence(warehouse)
         world._add_essence(shop)
@@ -39,16 +33,10 @@ class TestRequest:
         warehouse = Warehouse("warehouse", (0, 1))
         shop = Shop("shop", (0, 2))
         courier = Courier("courier", (0, 0), 10)
-        items = [
-            {
-                "product": "product1",
-                "amount": 5
-            },
-            {
-                "product": "product2",
-                "amount": 3
-            }
-        ]
+        items = {
+            "product1": 5,
+            "product2": 3
+        }
         World._fill_essence(warehouse, items)
         world._add_essence(warehouse)
         world._add_essence(shop)
@@ -66,16 +54,10 @@ class TestRequest:
         warehouse = Warehouse("warehouse", (0, 1))
         shop = Shop("shop", (0, 2))
         courier = Courier("courier", (0, 0), 10, 10)
-        items = [
-            {
-                "product": "product1",
-                "amount": 5
-            },
-            {
-                "product": "product2",
-                "amount": 3
-            }
-        ]
+        items = {
+            "product1": 5,
+            "product2": 3
+        }
         World._fill_essence(warehouse, items)
         world._add_essence(warehouse)
         world._add_essence(shop)
@@ -94,16 +76,10 @@ class TestRequest:
         warehouse = Warehouse("warehouse", (0, 1))
         shop = Shop("shop", (0, 2))
         courier = Courier("courier", (0, 0), 10, 10)
-        items = [
-            {
-                "product": "product1",
-                "amount": 5
-            },
-            {
-                "product": "product2",
-                "amount": 3
-            }
-        ]
+        items = {
+            "product1": 5,
+            "product2": 3
+        }
         World._fill_essence(warehouse, items)
         world._add_essence(warehouse)
         world._add_essence(shop)
@@ -122,16 +98,10 @@ class TestRequest:
         warehouse = Warehouse("warehouse", (0, 1))
         shop = Shop("shop", (0, 2))
         courier = Courier("courier", (0, 0), 10, 10)
-        items = [
-            {
-                "product": "product1",
-                "amount": 5
-            },
-            {
-                "product": "product2",
-                "amount": 3
-            }
-        ]
+        items = {
+            "product1": 5,
+            "product2": 3
+        }
         World._fill_essence(warehouse, items)
         world._add_essence(warehouse)
         world._add_essence(shop)

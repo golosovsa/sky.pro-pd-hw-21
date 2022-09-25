@@ -25,16 +25,10 @@ class TestWorld:
     def test_fill_essence(self):
         warehouse = Warehouse("warehouse", (0, 1))
         shop = Shop("shop", (0, 2))
-        items = [
-            {
-                "product": "product1",
-                "amount": 5
-            },
-            {
-                "product": "product2",
-                "amount": 3
-            }
-        ]
+        items = {
+            "product1": 5,
+            "product2": 3
+        }
         World._fill_essence(warehouse, items)
         World._fill_essence(shop, items)
 
@@ -44,16 +38,10 @@ class TestWorld:
     def test_fill_essence_failed(self):
         warehouse = Warehouse("warehouse", (0, 1))
         shop = Shop("shop", (0, 2))
-        items = [
-            {
-                "product": "",
-                "amount": "5"
-            },
-            {
-                "product": 123,
-                "amount": -30
-            }
-        ]
+        items = {
+            "product1": "5",
+            555: 3
+        }
         with pytest.raises(AssertionError):
             World._fill_essence(warehouse, items)
             World._fill_essence(shop, items)
@@ -63,16 +51,10 @@ class TestWorld:
         warehouse = Warehouse("warehouse", (0, 1))
         shop = Shop("shop", (0, 2))
         courier = Courier("courier", (0, 0))
-        items = [
-            {
-                "product": "product1",
-                "amount": 5
-            },
-            {
-                "product": "product2",
-                "amount": 3
-            }
-        ]
+        items = {
+            "product1": 5,
+            "product2": 3
+        }
         World._fill_essence(warehouse, items)
         world._add_essence(warehouse)
         world._add_essence(shop)
